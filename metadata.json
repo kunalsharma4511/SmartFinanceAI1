@@ -1,0 +1,5 @@
+{
+  "name": "SmartFinance AI",
+  "description": "An AI-powered financial assistant that analyzes bank statements, categorizes transactions, and provides personalized financial advice using Gemini.",
+  "requestFramePermissions": []
+}
