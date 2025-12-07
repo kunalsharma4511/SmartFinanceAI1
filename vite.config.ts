@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        // FIX: Add this line to allow your Render domain
+        allowedHosts: ['smartfinanceai1-1.onrender.com'], 
+        // Or use allowedHosts: true to allow ANY domain (easier if URL changes)
       },
       plugins: [react()],
       define: {
@@ -18,6 +21,6 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
-      }
-    };
+      }
+    };
 });
